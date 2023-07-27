@@ -83,6 +83,7 @@ sudo chflags noschg /etc/hosts
 - https://github.com/MacPass/MacPass
 - https://github.com/p0deje/Maccy
 - https://github.com/exelban/stats
+- https://github.com/ytdl-org/youtube-dl
 - https://github.com/section83/MacYTDL
 - https://github.com/alb12-la/KBOS
 - https://github.com/peazip/PeaZip
@@ -90,3 +91,12 @@ sudo chflags noschg /etc/hosts
 - https://github.com/ganeshrvel/openmtp
 - https://github.com/HandBrake/HandBrake
 
+# youtube-dl
+download zoom video  
+there will be 2 streams. one for camera video and other for screen sharing.  
+cookie will remain same for both, but url will be different
+```
+youtube-dl --output "FILENAME_HERE" --referer "https://zoom.us/" \
+--add-header "cookie: <copy cookie from network tab in chrome>" \
+"<copy requestURL from network tab in chrome>"
+```
