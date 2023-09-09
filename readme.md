@@ -14,9 +14,8 @@
 | `file` + `spacebar` | quick preview jpg/pdf |
 | `command` + `tab, Q` | quit application |
 | `command` + `spacebar` | spotlight (screensharing, currency/temerature conversion, calc, flights) |
-| `command` + `shift` + `.` | show hidden files |
 | `shift` + `command` + `g` | Goto folder (~ user folder) |
-| `ctrl` + `command` + `space` | emoticons |
+| `ctrl` + `command` + `space` | emoticons / smiley / icons |
 | `command` + `option` + `shift` + `esc` | quit apps one by one |
 | `defaults write com.apple.desktopservices DSDontWriteNetworkStores true` | DS_Store |
 | hover on maximize button | split screen |
@@ -25,7 +24,7 @@
 | startup hidden items location for System | `/Library/LaunchDaemons`  |
 | copy full path | right click and open context menu, now press OPTION key |
 | open pkg file | `pkgutil --expand ./filename ./outputfolder` |
-| open finder from terminal | `cd yourpath` then `open .`|
+
 
 ## Remove Leftover "Context Menu" of Uninstalled Apps
 * Keyboard > Shortcuts > Services
@@ -100,3 +99,9 @@ youtube-dl --output "FILENAME_HERE" --referer "https://zoom.us/" \
 --add-header "cookie: <copy cookie from network tab in chrome>" \
 "<copy requestURL from network tab in chrome>"
 ```
+
+# Finder
+- open finder window `option` + `command` + `space` 
+- open finder from terminal `open .`
+- toggle hidden files `shift` + `command` + `.`
+- two finder instances: drag the tab outside
