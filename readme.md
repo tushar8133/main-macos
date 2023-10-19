@@ -105,3 +105,20 @@ youtube-dl --output "FILENAME_HERE" --referer "https://zoom.us/" \
 - open finder from terminal `open .`
 - toggle hidden files `shift` + `command` + `.`
 - two finder instances: drag the tab outside
+
+# ExifTool
+
+https://exiftool.org
+
+#### To increment/decrement time taken
+
+`exiftool “-DateTimeOriginal+=0:0:0 15:0:0” -r folder_or_putadot`
+#### File Rename
+
+`exiftool '-filename<CreateDate' -d %Y%m%d_%H%M%S%%-c.%%ue -ext jpg -r folder_or_putadot`
+- `-d` means “Set format for date/time values”.
+- `%%-c` if two images have the same file name, then automatically increment. “-” before the “c” puts a dash before the copy number.
+- `.%%ue` make existing extension uppercase
+- `.%%le` make existing extension lowercase
+- `-r` recursive
+
