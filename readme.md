@@ -122,3 +122,44 @@ https://exiftool.org
 - `.%%le` make existing extension lowercase
 - `-r` recursive
 
+# HomeBrew
+- Link https://brew.sh
+- `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+- Now run these 2 commands
+- `(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> ~/.zprofile`
+- `eval "$(/opt/homebrew/bin/brew shellenv)"`
+- Close all terminal instances.
+
+## Homebrew > NVM
+- After installing NVM from homebrew, paste below code in these files `~/.zshrc`, `~/.profile`, `~/.bash_profile`
+
+```
+export NVM_DIR="$HOME/.nvm"
+[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+```
+
+## Homebrew > GIT
+- Regular homebrew install
+
+## VSCode
+- Preferred download is `silicon` over `universal` bundle.
+- `Command + Shift + P` search `install 'code' command in PATH` ___OR___ follow below
+- Paste below code to enable `code .` command from `zsh` terminal
+
+For `~/.bash_profile`, `~/.zprofile`
+```
+# Add Visual Studio Code (code)
+export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+```
+
+## Different path files (not sure)
+```
+# for bash
+source ~/.bashrc
+source ~/.bash_profile
+
+# for zsh
+source ~/.zshrc
+source ~/.zprofile
+```
