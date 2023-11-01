@@ -125,13 +125,14 @@ https://exiftool.org
 # HomeBrew
 - Link https://brew.sh
 - `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
-- Now run these 2 commands
+- Check terminal instructions OR run these 2 commands
 - `(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> ~/.zprofile`
 - `eval "$(/opt/homebrew/bin/brew shellenv)"`
 - Close all terminal instances.
 
 ## Homebrew > NVM
-- After installing NVM from homebrew, paste below code in these files `~/.zshrc`, `~/.profile`, `~/.bash_profile`
+- After installing NVM from homebrew check instructions in the terminal
+- OR paste below code in these files `~/.zshrc`, `~/.profile`, `~/.bash_profile`
 
 ```
 export NVM_DIR="$HOME/.nvm"
