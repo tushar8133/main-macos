@@ -106,6 +106,11 @@ youtube-dl --output "FILENAME_HERE" --referer "https://zoom.us/" \
 - toggle hidden files `shift` + `command` + `.`
 - two finder instances: drag the tab outside
 - Set default folder > `Finder` > `Settings` > `General` > `New Finder Window show`
+- `Settings` > `Advanced` > `Show all filename extensions`
+- `View` > `Show Status Bar`
+- `View` > `Show Path Bar`
+- `View` > `Show View Options (⌘ + J)`
+- `Go` > Shortcuts to jump to specific folders
 
 # Screenshot
 - Auto save to _Pictures_ instead of _Desktop_
