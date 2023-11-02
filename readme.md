@@ -106,6 +106,12 @@ youtube-dl --output "FILENAME_HERE" --referer "https://zoom.us/" \
 - toggle hidden files `shift` + `command` + `.`
 - two finder instances: drag the tab outside
 
+# Screenshot
+- Auto save to _Pictures_ instead of _Desktop_
+- Press `command + shift + 5`
+- Click `Options`
+- Choose `Other Locations...`
+
 # ExifTool
 
 https://exiftool.org
