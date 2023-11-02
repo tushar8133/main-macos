@@ -105,12 +105,14 @@ youtube-dl --output "FILENAME_HERE" --referer "https://zoom.us/" \
 - open finder from terminal `open .`
 - toggle hidden files `shift` + `command` + `.`
 - two finder instances: drag the tab outside
+- Set default folder > `Finder` > `Settings` > `General` > `New Finder Window show`
 
 # Screenshot
 - Auto save to _Pictures_ instead of _Desktop_
 - Press `command + shift + 5`
 - Click `Options`
 - Choose `Other Locations...`
+
 
 # ExifTool
 
