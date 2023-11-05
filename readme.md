@@ -83,7 +83,7 @@ sudo chflags noschg /etc/hosts
 - https://github.com/p0deje/Maccy
 - https://github.com/exelban/stats
 - https://github.com/ytdl-org/youtube-dl
-- https://github.com/section83/MacYTDL
+- https://github.com/section83/MacYTDL or better from homebrew
 - https://github.com/alb12-la/KBOS
 - https://github.com/peazip/PeaZip
 - https://github.com/TheTorProject/gettorbrowser
@@ -91,13 +91,18 @@ sudo chflags noschg /etc/hosts
 - https://github.com/HandBrake/HandBrake
 
 # youtube-dl
-download zoom video  
-there will be 2 streams. one for camera video and other for screen sharing.  
-cookie will remain same for both, but url will be different
+### zoom video
+- open zoom meeting with passcode.
+- open network tab and filter for `mp4`
+- something like this will be there `https://ssrweb.zoom.us/cmr/replay/.../Recording_1920x1080.mp4`
+- Sometimes there might be 2 streams, one for camera video and other for screen sharing.
+- copy full `Request URL` and paste in below code.
+- copy whole `Cookie` and paste in below code.
+
 ```
 youtube-dl --output "FILENAME_HERE" --referer "https://zoom.us/" \
---add-header "cookie: <copy cookie from network tab in chrome>" \
-"<copy requestURL from network tab in chrome>"
+--add-header "cookie: PASTE_COOKIE_HERE" \
+"PASTE_REQUEST_URL_HERE"
 ```
 
 # Finder
