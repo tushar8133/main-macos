@@ -143,6 +143,7 @@ https://exiftool.org
 # NodeJs
 - https://nodejs.org/en/about/previous-releases
 - `.zprofile` or `.zshrc` paste `export PATH=/Users/tushar/node-v20.10.0-darwin-arm64/bin:$PATH`
+- Open `bin` folder and double click on `node` executable once, to avoid the error from vscode `"node" can’t be opened because Apple cannot check it for malicious software.`
 
 # HomeBrew
 - Link https://brew.sh
