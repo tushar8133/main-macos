@@ -187,3 +187,11 @@ source ~/.bash_profile
 source ~/.zshrc
 source ~/.zprofile
 ```
+
+# Localhost server between MacOs and iPhone
+- Start a local server in nodejs to serve static content
+- Place your file inside public folder and serve from there
+- Lets say it is serving at `http://localhost:4000`
+- Copy `IP address` from `MacOs` > `Wifi-Settings`
+- On iPhone, open browser, and paste url as `http://YOUR_MAC_IP_ADDRESS:4000`
+
