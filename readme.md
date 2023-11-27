@@ -140,6 +140,10 @@ https://exiftool.org
 - `.%%le` make existing extension lowercase
 - `-r` recursive
 
+# NodeJs
+- https://nodejs.org/en/about/previous-releases
+- `.zprofile` or `.zshrc` paste `export PATH=/Users/tushar/node-v20.10.0-darwin-arm64/bin:$PATH`
+
 # HomeBrew
 - Link https://brew.sh
 - `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
