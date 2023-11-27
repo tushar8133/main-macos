@@ -195,3 +195,11 @@ source ~/.zprofile
 - Copy `IP address` from `MacOs` > `Wifi-Settings`
 - On iPhone, open browser, and paste url as `http://YOUR_MAC_IP_ADDRESS:4000`
 
+
+# Debug page on iPhone
+- `iPhone` > `Settings` > `Safari` > `Advanced` > `Web Inspector` turn on
+- `Mac` > `Safari` > `Preferences` > `Advanced` > `Show Develop menu in menu bar` check on
+- Connect both through USB cable
+- `iPhone` > Open website that you want to debug
+- `Mac` > `Develop menu` > Select your iOS device
+- Debug page will get open
