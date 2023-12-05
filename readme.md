@@ -174,7 +174,8 @@ export NVM_DIR="$HOME/.nvm"
 For `~/.bash_profile`, `~/.zprofile`
 ```
 # Add Visual Studio Code (code)
-export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+# export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+export PATH="/Users/Tushar/Downloads/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
 ```
 
 ## Different path files (not sure)
