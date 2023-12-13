@@ -9,14 +9,14 @@
 | `control` + `click` | open context menu |
 | context menu + `option` | extra context menu |
 | `shift` + `option` + `brightness/volume` | very small shifts |
+| `command` + `tab, Q` | quit application |
 | `command` + `option` + `esc` | Force quit running apps |
+| `command` + `option` + `shift` + `esc` | quit apps one by one |
 | `command` + `shift` + `3/4/5` | screenshot or recording |
 | `file` + `spacebar` | quick preview jpg/pdf |
-| `command` + `tab, Q` | quit application |
 | `command` + `spacebar` | spotlight (screensharing, currency/temerature conversion, calc, flights) |
 | `shift` + `command` + `g` | Goto folder (~ user folder) |
 | `ctrl` + `command` + `space` | emoticons / smiley / icons |
-| `command` + `option` + `shift` + `esc` | quit apps one by one |
 | `defaults write com.apple.desktopservices DSDontWriteNetworkStores true` | DS_Store |
 | hover on maximize button | split screen |
 | right click on speaker icon next to search bar | picture in picture |
