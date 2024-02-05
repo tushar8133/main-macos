@@ -204,3 +204,9 @@ source ~/.zprofile
 - `iPhone` > Open website that you want to debug
 - `Mac` > `Develop menu` > Select your iOS device
 - Debug page will get open
+
+# OS update
+
+- Open Terminal
+- `softwareupdate --list-full-installers`
+- `softwareupdate --fetch-full-installer --full-installer-version 14.3.0`
