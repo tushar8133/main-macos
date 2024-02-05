@@ -209,4 +209,6 @@ source ~/.zprofile
 
 - Open Terminal
 - `softwareupdate --list-full-installers`
-- `softwareupdate --fetch-full-installer --full-installer-version 14.3.0`
+- `softwareupdate --fetch-full-installer --full-installer-version 14.1.1`
+- Open `Disk Utility` Format USB as `Format: "Mac OS Extended (Journaled)"` and `Scheme: "GUID Partition Map"`
+- `sudo /Applications/Install\ macOS\ Sonoma.app/Contents/Resources/createinstallmedia --volume /Volumes/SanDisk`
