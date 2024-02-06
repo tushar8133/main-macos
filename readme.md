@@ -149,8 +149,10 @@ https://exiftool.org
 - Link https://brew.sh
 - `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 - Check terminal instructions OR run these 2 commands
-- `(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> ~/.zprofile`
-- `eval "$(/opt/homebrew/bin/brew shellenv)"`
+  - `(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> ~/.zprofile`
+  - `eval "$(/opt/homebrew/bin/brew shellenv)"`
+- Above commands will write below code inside `~/.zprofile`
+  - `eval "$(/opt/homebrew/bin/brew shellenv)"`
 - Close all terminal instances.
 
 ## Homebrew > NVM
