@@ -142,7 +142,9 @@ https://exiftool.org
 
 # NodeJs
 - https://nodejs.org/en/about/previous-releases
-- `.zprofile` or `.zshrc` paste `export PATH=/Users/tushar/node-v20.10.0-darwin-arm64/bin:$PATH`
+- https://nodejs.org/download/release/v20.11.0/node-v20.11.0-darwin-arm64.tar.gz
+- double click and extract
+- write into `.zprofile` - `export PATH="$PATH:/Users/tushar/Downloads/node-v20.11.0-darwin-arm64/bin"`
 - To avoid the error from vscode `"node" can’t be opened because Apple cannot check it for malicious software.`. Open the `bin` folder, right click on `node` executable, and select _Open_ once.
 
 # HomeBrew
@@ -169,16 +171,10 @@ export NVM_DIR="$HOME/.nvm"
 - `brew install git`
 
 ## VSCode
+- https://code.visualstudio.com/download
 - Preferred download is `silicon` over `universal` bundle.
-- `Command + Shift + P` search `install 'code' command in PATH` ___OR___ follow below
-- Paste below code to enable `code .` command from `zsh` terminal
-
-For `~/.bash_profile`, `~/.zprofile`
-```
-# Add Visual Studio Code (code)
-# export PATH="\$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-export PATH="/Users/Tushar/Downloads/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
-```
+- write in `.zprofile` - `export PATH="$PATH:/Users/tushar/Downloads/Visual Studio Code.app/Contents/Resources/app/bin"`
+- OR `Command + Shift + P` search `install 'code' command in PATH`
 
 ## Different path files (not sure)
 ```
