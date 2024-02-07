@@ -166,7 +166,7 @@ export NVM_DIR="$HOME/.nvm"
 ```
 
 ## Homebrew > GIT
-- Regular homebrew install
+- `brew install git`
 
 ## VSCode
 - Preferred download is `silicon` over `universal` bundle.
