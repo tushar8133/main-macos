@@ -25,7 +25,7 @@
 | copy full path | right click and open context menu, now press OPTION key |
 | open pkg file | `pkgutil --expand ./filename ./outputfolder` |
 | restart `finder` | `option` + `right click` + `relaunch` |
-
+| laptop start sound | seach in `settings` for `startup sound` |
 
 ## Remove Leftover "Context Menu" of Uninstalled Apps
 * Keyboard > Shortcuts > Services
