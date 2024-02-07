@@ -175,6 +175,7 @@ export NVM_DIR="$HOME/.nvm"
 - Preferred download is `silicon` over `universal` bundle.
 - write in `.zprofile` - `export PATH="$PATH:/Users/tushar/Downloads/Visual Studio Code.app/Contents/Resources/app/bin"`
 - OR `Command + Shift + P` search `install 'code' command in PATH`
+- Open `Automator` > `Quick Action` > Search `Open Finder Items` > Drag to right > `Workflow receives current (in) "Finder.app"` >  `Open with` Browse your application > `Save`
 
 ## Different path files (not sure)
 ```
