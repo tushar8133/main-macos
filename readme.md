@@ -206,9 +206,37 @@ source ~/.zprofile
 - Debug page will get open
 
 # OS update
-
 - Open Terminal
 - `softwareupdate --list-full-installers`
 - `softwareupdate --fetch-full-installer --full-installer-version 14.1.1`
 - Open `Disk Utility` Format USB as `Format: "Mac OS Extended (Journaled)"` and `Scheme: "GUID Partition Map"`
 - `sudo /Applications/Install\ macOS\ Sonoma.app/Contents/Resources/createinstallmedia --volume /Volumes/SanDisk`
+
+# Before Installation
+- Backup Browser bookmarks
+- Backup Chrome Snippets
+- Backup Notes
+- Backup Sublime Notes
+- Backup .zprofile, zsh
+
+# While Installation
+- Select "My computer is not connected to internet"
+
+# After Installation
+- Turn on Night Shift
+- Battery show percentage
+- Off "Slightly dim the display on battery"
+- On "Prevent automatic sleeping on power adapter"
+- Screenshot default location
+- Finder settings
+- Finder settings from top menu bar > Show Toolbar, Show Path Bar, Show Status Bar
+- Login into app store
+- Install whatsapp
+- Login google without system wide login
+- Safari > Settings > Advance > show full path
+- Safari > Settings > Advance > show developer options
+- Safari > Settings > General > Uncheck open safe files after downloading
+- Keyboard > Autocorrect off
+- Off Startup sound
+- textEdit.app > Settings > plain text
+- Keyboard > Keyboard Shortcuts > App Shortcuts > `+` > Menu Title `Paste and Match Style` > Shortcut > `ctrl + v`
