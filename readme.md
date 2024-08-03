@@ -240,3 +240,28 @@ source ~/.zprofile
 - Off Startup sound
 - textEdit.app > Settings > plain text
 - Keyboard > Keyboard Shortcuts > App Shortcuts > `+` > Menu Title `Paste and Match Style` > Shortcut > `ctrl + v`
+
+# 7z 7zip
+
+- Install
+  - https://7-zip.org/a/7z2407-mac.tar.xz
+  - Double click and extract
+  - Place folder to a safe place
+  - Right click `7zz` file, Press `Option` key, `Copy 7zz as Pathname`
+  - Paste that path in `.zprofile`
+- Frequently used commands
+	- `7zz a filename ./folder/` default
+	- `7zz a -mx0 filename ./folder/` compression store
+	- `7zz a -mx9 filename ./folder/` compression fastest
+	- `7zz a -mx9 filename ./folder/` compression ultra
+	- `7zz a -pWELCOME filename ./folder/` with password
+  - `7zz a -pWELCOME -mhe filename ./folder/` with password and encryption
+- Args (https://axelstudios.github.io/7z)
+	- `-mx` Compression Level
+	- `-m0` Compression Method
+	- `-md` Dictionary Size
+	- `-mfb` Word Size
+	- `-ms` Solid Block Size
+	- `-mmt` Number of CPU threads
+	- `-p` password
+	- `-mhe` encrypt file names
