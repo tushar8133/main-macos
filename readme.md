@@ -27,6 +27,19 @@
 | restart `finder` | `option` + `right click` + `relaunch` |
 | laptop start sound | seach in `settings` for `startup sound` |
 
+
+# `.zprofile` file contents
+```
+export PATH="$PATH:/Users/tushar/setups/Visual Studio Code.app/Contents/Resources/app/bin"
+
+export PATH="$PATH:/Users/tushar/setups/node-v20.11.0-darwin-arm64/bin"
+
+alias 7z="/Users/tushar/setups/7z2407-mac/7zz"
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
+```
+
+
 ## Remove Leftover "Context Menu" of Uninstalled Apps
 * Keyboard > Shortcuts > Services
 * ~/Library/Services
@@ -244,18 +257,20 @@ source ~/.zprofile
 # 7z 7zip
 
 - Install
-  - https://7-zip.org/a/7z2407-mac.tar.xz
-  - Double click and extract
-  - Place folder to a safe place
-  - Right click `7zz` file, Press `Option` key, `Copy 7zz as Pathname`
-  - Paste that path in `.zprofile`
+	- https://7-zip.org/a/7z2407-mac.tar.xz
+	- Double click and extract
+	- Place folder to a safe place
+	- Right click `7zz` file, Press `Option` key, `Copy 7zz as Pathname` and Paste that path in `.zprofile`'s PATH variable
+	- Alternatively, you can paste the path and set `alias`, to use `7z` instead of `7zz`. Check the `.zprofile` section in this document.
 - Frequently used commands
-	- `7zz a filename ./folder/` default
-	- `7zz a -mx0 filename ./folder/` compression store
-	- `7zz a -mx9 filename ./folder/` compression fastest
-	- `7zz a -mx9 filename ./folder/` compression ultra
-	- `7zz a -pWELCOME filename ./folder/` with password
-  - `7zz a -pWELCOME -mhe filename ./folder/` with password and encryption
+	- `7z a filename ./folder/` default
+	- `7z a -mx0 filename ./folder/` compression store
+	- `7z a -mx9 filename ./folder/` compression fastest
+	- `7z a -mx9 filename ./folder/` compression ultra
+	- `7z a -pWELCOME filename ./folder/` with password
+	- `7z a -pWELCOME -mhe filename ./folder/` with password and encryption
+	- `7z x` to extract at same level
+	- `7z x -oPATHTOEXTRACT` to extract at different location
 - Args (https://axelstudios.github.io/7z)
 	- `-mx` Compression Level
 	- `-m0` Compression Method
