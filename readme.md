@@ -269,8 +269,9 @@ source ~/.zprofile
 	- `7z a -mx9 filename ./folder/` compression ultra
 	- `7z a -pWELCOME filename ./folder/` with password
 	- `7z a -pWELCOME -mhe filename ./folder/` with password and encryption
-	- `7z x` to extract at same level
-	- `7z x -oPATHTOEXTRACT` to extract at different location
+	- `7z x archive.7z` to extract at same level
+	- `7z x archive.7z -oPATHTOEXTRACT -r` to extract at different location
+ 	- `7z x archive.7z -oPATHTOEXTRACT -r -pSECRET` to extract with password
 - Args (https://axelstudios.github.io/7z)
 	- `-mx` Compression Level
 	- `-m0` Compression Method
