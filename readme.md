@@ -30,13 +30,26 @@
 
 # `.zprofile` file contents
 ```
-export PATH="$PATH:/Users/tushar/setups/Visual Studio Code.app/Contents/Resources/app/bin"
+export PATH="$PATH:/Users/tushar/Setups/Visual Studio Code.app/Contents/Resources/app/bin"
 
-export PATH="$PATH:/Users/tushar/setups/node-v20.11.0-darwin-arm64/bin"
+export PATH="$PATH:/Users/tushar/Setups/node-v20.11.0-darwin-arm64/bin"
 
-alias 7z="/Users/tushar/setups/7z2407-mac/7zz"
+export PATH="$PATH:/Users/tushar/Setups/mongo"
+
+# export PATH="$PATH:/Users/tushar/Setups/CMake.app/Contents/bin"
+
+alias 7z="/Users/tushar/Setups/7z2407-mac/7zz"
+
+# alias Ninja="/Users/tushar/Setups/ninja"
+
+# alias heimdall="/Users/tushar/Setups/heimdall-frontend.app/Contents/MacOS/heimdall"
+
+# alias adb="/Users/tushar/Setups/adb/adb"
+
+export PATH="$PATH:/Applications/Docker.app/Contents/Resources/bin"
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
+
 ```
 
 
