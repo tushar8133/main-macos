@@ -255,3 +255,9 @@ source ~/.zprofile
 - textEdit.app > Settings > plain text
 - Keyboard > Keyboard Shortcuts > App Shortcuts > `+` > Menu Title `Paste and Match Style` > Shortcut > `ctrl + v`
 
+
+# remove .DS_Store from zip files
+```sh
+zip -d filename.zip __MACOSX/\*
+zip -d filename.zip \*/.DS_Store
+```
