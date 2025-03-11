@@ -278,7 +278,7 @@ source ~/.zprofile
 
 
 # remove .DS_Store from zip files
+Replace Archive.zip name at two places.
 ```sh
-zip -d Archive.zip __MACOSX/\*
-zip -d Archive.zip \*/.DS_Store
+zip -d Archive.zip __MACOSX/\* && zip -d Archive.zip \*/.DS_Store
 ```
