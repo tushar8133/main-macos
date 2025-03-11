@@ -203,7 +203,15 @@ export NVM_DIR="$HOME/.nvm"
 - Preferred download is `silicon` over `universal` bundle.
 - write in `.zprofile` - `export PATH="$PATH:/Users/tushar/Downloads/Visual Studio Code.app/Contents/Resources/app/bin"`
 - OR `Command + Shift + P` search `install 'code' command in PATH`
-- Open `Automator` > `Quick Action` > Search `Open Finder Items` > Drag to right > `Workflow receives current (in) "Finder.app"` >  `Open with` Browse your application > `Save`
+- Add VSCode to folder's context menu
+  - Open `Automator`
+  - Select `Quick Action`
+  - Search `Open Finder Items`
+  - Drag it to the right column
+  - Select Dropdown `Workflow receives current` > `"Automatic (files or folders)"`
+  - Select Dropdown `in` > `"Finder.app"`
+  - `Open with` Browse your application
+  - `Save`
 
 ## Different path files (not sure)
 ```
