@@ -30,26 +30,27 @@
 
 # `.zprofile` file contents
 ```
-export PATH="$PATH:/Users/tushar/Setups/Visual Studio Code.app/Contents/Resources/app/bin"
-
 export PATH="$PATH:/Users/tushar/Setups/node-v20.11.0-darwin-arm64/bin"
 
 export PATH="$PATH:/Users/tushar/Setups/mongo"
 
-# export PATH="$PATH:/Users/tushar/Setups/CMake.app/Contents/bin"
+export PATH="$PATH:/Users/tushar/Setups/CMake.app/Contents/bin"
 
 alias 7z="/Users/tushar/Setups/7z2407-mac/7zz"
 
-# alias Ninja="/Users/tushar/Setups/ninja"
+alias nginx="/Users/tushar/Setups/nginx/nginx-1.26.3-arm64-darwin"
 
-# alias heimdall="/Users/tushar/Setups/heimdall-frontend.app/Contents/MacOS/heimdall"
+alias code="/Users/tushar/Setups/vscode.app/Contents/Resources/app/bin/code"
 
-# alias adb="/Users/tushar/Setups/adb/adb"
+alias docker="/Applications/Docker.app/Contents/Resources/bin/docker"
 
-export PATH="$PATH:/Applications/Docker.app/Contents/Resources/bin"
+alias heimdall="/Users/tushar/Setups/heimdall-frontend.app/Contents/MacOS/heimdall"
+
+alias adb="/Users/tushar/Setups/adb/adb"
+
+alias Ninja="/Users/tushar/Setups/ninja"
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
-
 ```
 
 
@@ -201,9 +202,9 @@ export NVM_DIR="$HOME/.nvm"
 ## VSCode
 - https://code.visualstudio.com/download
 - Preferred download is `silicon` over `universal` bundle.
-- write in `.zprofile` - `export PATH="$PATH:/Users/tushar/Downloads/Visual Studio Code.app/Contents/Resources/app/bin"`
+- write in `.zprofile` - `alias code="/Users/tushar/Setups/vscode.app/Contents/Resources/app/bin/code"`
 - OR `Command + Shift + P` search `install 'code' command in PATH`
-- Add VSCode to folder's context menu
+- Context Menu (Automator)
   - Open `Automator`
   - Select `Quick Action`
   - Search `Open Finder Items`
@@ -212,7 +213,17 @@ export NVM_DIR="$HOME/.nvm"
   - Select Dropdown `in` > `"Finder.app"`
   - `Open with` Browse your application
   - `Save`
-
+- Context Menu (Shortcuts)
+  - Open `Shortcuts`
+  - Select `Quick Actions`
+  - Receive `Files and Folders` input from `Quick Actions`
+  - Goto `Action Library`
+  - Search `Run Shell Script`
+  - Paste `open -n -b "com.microsoft.VSCodeInsiders" --args "$*"`
+  - Shell: `zsh`
+  - Input: Leave Blank
+  - Pass Input: `as arguments`
+  - Give this Shortcut a name on top
 ## Different path files (not sure)
 ```
 # for bash
