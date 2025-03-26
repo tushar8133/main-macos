@@ -293,3 +293,9 @@ Replace Archive.zip name at two places.
 ```sh
 zip -d Archive.zip __MACOSX/\* && zip -d Archive.zip \*/.DS_Store
 ```
+
+# Check app's identifier name
+```
+codesign -dv "/Users/Downloads/Visual Studio Code.app"
+# Identifier=com.microsoft.VSCode
+```
