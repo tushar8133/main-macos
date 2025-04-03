@@ -36,19 +36,21 @@ export PATH="$PATH:/Users/tushar/Setups/mongo"
 
 export PATH="$PATH:/Users/tushar/Setups/CMake.app/Contents/bin"
 
+export PATH="$PATH:/Applications/Docker.app/Contents/Resources/bin"
+
 alias 7z="/Users/tushar/Setups/7z2407-mac/7zz"
 
 alias nginx="/Users/tushar/Setups/nginx/nginx-1.26.3-arm64-darwin"
 
 alias code="/Users/tushar/Setups/vscode.app/Contents/Resources/app/bin/code"
 
-alias docker="/Applications/Docker.app/Contents/Resources/bin/docker"
-
 alias heimdall="/Users/tushar/Setups/heimdall-frontend.app/Contents/MacOS/heimdall"
 
 alias adb="/Users/tushar/Setups/adb/adb"
 
 alias Ninja="/Users/tushar/Setups/ninja"
+
+alias mysql="/Users/tushar/Setups/mysql-8.4.4-macos15-arm64/bin/mysql"
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
