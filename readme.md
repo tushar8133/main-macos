@@ -301,3 +301,9 @@ zip -d Archive.zip __MACOSX/\* && zip -d Archive.zip \*/.DS_Store
 codesign -dv "/Users/Downloads/Visual Studio Code.app"
 # Identifier=com.microsoft.VSCode
 ```
+
+# Safari Cache
+- `System Settings` > `Privacy & Security` > `Full Disk Access` > `Terminal` turn on
+- `sudo rm -rf ~/Library/Caches/com.apple.Safari`
+- `sudo rm -rf ~/Library/Preferences/com.apple.Safari.plist`
+- `sudo rm -rf ~/Library/Safari`
