@@ -307,3 +307,10 @@ codesign -dv "/Users/Downloads/Visual Studio Code.app"
 - `sudo rm -rf ~/Library/Caches/com.apple.Safari`
 - `sudo rm -rf ~/Library/Preferences/com.apple.Safari.plist`
 - `sudo rm -rf ~/Library/Safari`
+
+# PARALLES
+- https://gist.github.com/gdurastanti/e79b1fae40a4eff14f5636b8994a89fc?permalink_comment_id=4083430
+- https://github.com/utsanjan/PD-Runner
+- https://github.com/LuYee6813/PD_Cracker
+- https://www.reddit.com/r/MacCrack/comments/xqsg55/parallels_desktop_business_edition_v1801_crack/
+- https://www.reddit.com/r/MacCrack/comments/10ada30/parallels_desktop_18_full_crack_activation_for/
