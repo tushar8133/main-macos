@@ -1,6 +1,8 @@
 # MACOS
 |   |   |
 |---|---|
+| `^` + `↓` | Show Current App's All Windows |
+| `^` + `F3` | Show Current App's All Windows |
 | dock icon `control` + `click` | show extra options |
 | dock icon `option` + `click` | show hide window |
 | dock icon `command` + `click` | open app location in finder |
