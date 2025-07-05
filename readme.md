@@ -122,6 +122,7 @@ sudo chflags noschg /etc/hosts
 - https://github.com/TheTorProject/gettorbrowser
 - https://github.com/ganeshrvel/openmtp
 - https://github.com/HandBrake/HandBrake
+- https://github.com/alienator88/Pearcleaner
 
 # youtube-dl
 ### zoom video
