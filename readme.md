@@ -63,6 +63,14 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 * ~/Library/Services
 * Open that app > In the dock select Show in Finder > Delete that app >  Related context Items will be removed
 
+## xattr
+
+```sh
+ls -la // check @ symbol after file permissions (extended attribute)
+xattr myfile // prints info
+xattr -l myfile // prints more info
+xattr -c myfile // remove all extended attributes
+```
 
 ## Remove hidden attribute from file or app
 
