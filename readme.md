@@ -299,6 +299,8 @@ source ~/.zprofile
 - Off Startup sound
 - textEdit.app > Settings > plain text
 - Keyboard > Keyboard Shortcuts > App Shortcuts > `+` > Menu Title `Paste and Match Style` > Shortcut > `ctrl + v`
+- Trackpad > More Gestures > App Expose > Swipe Down with Three Fingers
+- Keyboard > Key Shortcuts… > Mission Control > Mission Control > Switch to Desktop 1… (must have multiple blank workspace before implementing)
 
 
 # remove .DS_Store from zip files
