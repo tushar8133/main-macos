@@ -131,48 +131,34 @@ sudo chflags noschg /etc/hosts
 - https://github.com/HandBrake/HandBrake
 - https://github.com/alienator88/Pearcleaner
 
+
 # youtube-dl
 ```
 curl -LO https://github.com/yt-dlp/yt-dlp/releases/download/2025.07.21/yt-dlp_macos
 xattr -c yt-dlp_macos
 sudo chmod a+rx yt-dlp_macos
-sudo mv ./yt-dlp_macos /usr/local/bin/yt
-yt --help
+sudo mv ./yt-dlp_macos /usr/local/bin/yt-dlp
+yt-dlp --help
 ```
 
-- simply download  
-    `yt "https://www.youtube.com/watch?v=7E-cwdnsiow"`
-- to check available formats  
-	`yt --list-formats "https://www.youtube.com/watch?v=7E-cwdnsiow"`
-- download with format code shared using --list-formats  
-	`yt --format 222 "https://www.youtube.com/watch?v=7E-cwdnsiow"`
-- combine multiple formats  
-	`yt --format 137+141 "https://www.youtube.com/watch?v=7E-cwdnsiow"`
-- in case of playlist, pass mutliple formats, so it picks whatever available for each video  
-	`yt --format 22/17/18 <playlist_url>`
-- just audio  
-	`yt -x "https://www.youtube.com/watch?v=7E-cwdnsiow"`
-- just audio with format  
-	`yt -x --audio--formatormat mp3 "https://www.youtube.com/watch?v=7E-cwdnsiow"`
-- best quality format (both audio and video)  
-	`yt --format best "https://www.youtube.com/watch?v=7E-cwdnsiow"`
-- to download highest quality  
-	`yt --format 'bestvideo[height<=1080]+bestaudio/best' "https://www.youtube.com/watch?v=7E-cwdnsiow"`
-- audio-only with best quality  
-	`yt --format bestaudio "https://www.youtube.com/watch?v=7E-cwdnsiow"`
-- merge different format  
-	`yt --format bestvideo+bestaudio "https://www.youtube.com/watch?v=7E-cwdnsiow"`
-- download separate formats  
-	`yt --format 'bestvideo,bestaudio' "https://www.youtube.com/watch?v=7E-cwdnsiow" -o '%(title)s.f%(format_id)s.%(ext)s'`
-- download by extension  
-	`yt --format mp4 "https://www.youtube.com/watch?v=7E-cwdnsiow"`
-- download by file size  
-	`yt --min--formatilesize 100M <playlist_url>`
-- download by file size  
-	`yt --max--formatilesize 100M <playlist_url>`
+- `yt-dlp "https://www.youtube.com/watch?v=7E-cwdnsiow"` simply download
+- `yt-dlp --list-formats "https://www.youtube.com/watch?v=7E-cwdnsiow"` to check available formats
+- `yt-dlp --format 222 "https://www.youtube.com/watch?v=7E-cwdnsiow"` download with format code shared using --list-formats
+- `yt-dlp --format 137+141 "https://www.youtube.com/watch?v=7E-cwdnsiow"` combine multiple formats
+- `yt-dlp --format 22/17/18 <playlist_url>` in case of playlist, pass mutliple formats, so it picks whatever available for each video
+- `yt-dlp -x "https://www.youtube.com/watch?v=7E-cwdnsiow"` just audio
+- `yt-dlp -x --audio--formatormat mp3 "https://www.youtube.com/watch?v=7E-cwdnsiow"` just audio with format
+- `yt-dlp --format best "https://www.youtube.com/watch?v=7E-cwdnsiow"` best quality format (both audio and video)
+- `yt-dlp --format 'bestvideo[height<=1080]+bestaudio/best' "https://www.youtube.com/watch?v=7E-cwdnsiow"` to download highest quality
+- `yt-dlp --format bestaudio "https://www.youtube.com/watch?v=7E-cwdnsiow"` audio-only with best quality
+- `yt-dlp --format bestvideo+bestaudio "https://www.youtube.com/watch?v=7E-cwdnsiow"` merge different format
+- `yt-dlp --format 'bestvideo,bestaudio' "https://www.youtube.com/watch?v=7E-cwdnsiow" -o '%(title)s.f%(format_id)s.%(ext)s'` download separate formats
+- `yt-dlp --format mp4 "https://www.youtube.com/watch?v=7E-cwdnsiow"` download by extension
+- `yt-dlp --min--formatilesize 100M <playlist_url>` download by file size
+- `yt-dlp --max--formatilesize 100M <playlist_url>` download by file size
+- `yt-dlp --write-description --write-info-json --write-annotations --write-sub --write-thumbnail "https://www.youtube.com/watch?v=7E-cwdnsiow"` download misc
 
-- zoom video
-    ```
+##### zoom video
 	# open zoom meeting with passcode.
 	# open network tab and filter for `mp4`
 	# something like this will be there `https://ssrweb.zoom.us/cmr/replay/.../Recording_1920x1080.mp4`
@@ -180,11 +166,33 @@ yt --help
 	# copy full `Request URL` and paste in below code.
 	# copy whole `Cookie` and paste in below code.
 	
-	yt --output "FILENAME_HERE" \
-    --referer "https://zoom.us/" \
+	yt-dlp \
+	--output "FILENAME_HERE" \
+	--referer "https://zoom.us/" \
 	--add-header "cookie: PASTE_COOKIE_HERE" \
 	"PASTE_REQUEST_URL_HERE"
-	```
+
+##### vimeo video
+	# either use --cookies-from-browser or --cookies
+	# --referer is optional (it the page url which holds the video player)
+	# --user-agent is optional (use whatever your browser is showing)
+	# video url format could be "https://vimeo.com/123456789" or "https://player.vimeo.com/video/123456"
+	
+	# example 1
+	yt-dlp "https://player.vimeo.com/video/123456"
+
+	# example 2
+	yt-dlp \
+	--cookies-from-browser chrome \
+	"https://player.vimeo.com/video/123456"
+
+	# example 3
+	yt-dlp \
+	--cookies-from-browser chrome \
+	--cookies "path/to/cookies.txt" \
+	--referer "https://example.com/page" \
+	--user-agent "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36" \
+	"https://vimeo.com/123456789"
 
 
 # Finder
