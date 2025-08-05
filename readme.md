@@ -122,9 +122,8 @@ sudo chflags noschg /etc/hosts
 - https://github.com/MacPass/MacPass
 - https://github.com/p0deje/Maccy
 - https://github.com/exelban/stats
-- https://github.com/ytdl-org/youtube-dl (HomeBrew)
 - https://github.com/section83/MacYTDL
-- [youtube-dl online](https://ytdlp.online)
+- https://github.com/ytdl-org/youtube-dl
 - https://github.com/alb12-la/KBOS
 - https://github.com/peazip/PeaZip
 - https://github.com/TheTorProject/gettorbrowser
@@ -133,19 +132,60 @@ sudo chflags noschg /etc/hosts
 - https://github.com/alienator88/Pearcleaner
 
 # youtube-dl
-### zoom video
-- open zoom meeting with passcode.
-- open network tab and filter for `mp4`
-- something like this will be there `https://ssrweb.zoom.us/cmr/replay/.../Recording_1920x1080.mp4`
-- Sometimes there might be 2 streams, one for camera video and other for screen sharing.
-- copy full `Request URL` and paste in below code.
-- copy whole `Cookie` and paste in below code.
+```
+curl -LO https://github.com/yt-dlp/yt-dlp/releases/download/2025.07.21/yt-dlp_macos
+xattr -c yt-dlp_macos
+sudo chmod a+rx yt-dlp_macos
+sudo mv ./yt-dlp_macos /usr/local/bin/yt
+yt --help
+```
 
-```
-youtube-dl --output "FILENAME_HERE" --referer "https://zoom.us/" \
---add-header "cookie: PASTE_COOKIE_HERE" \
-"PASTE_REQUEST_URL_HERE"
-```
+- simply download  
+    `yt "https://www.youtube.com/watch?v=7E-cwdnsiow"`
+- to check available formats  
+	`yt --list-formats "https://www.youtube.com/watch?v=7E-cwdnsiow"`
+- download with format code shared using --list-formats  
+	`yt --format 222 "https://www.youtube.com/watch?v=7E-cwdnsiow"`
+- combine multiple formats  
+	`yt --format 137+141 "https://www.youtube.com/watch?v=7E-cwdnsiow"`
+- in case of playlist, pass mutliple formats, so it picks whatever available for each video  
+	`yt --format 22/17/18 <playlist_url>`
+- just audio  
+	`yt -x "https://www.youtube.com/watch?v=7E-cwdnsiow"`
+- just audio with format  
+	`yt -x --audio--formatormat mp3 "https://www.youtube.com/watch?v=7E-cwdnsiow"`
+- best quality format (both audio and video)  
+	`yt --format best "https://www.youtube.com/watch?v=7E-cwdnsiow"`
+- to download highest quality  
+	`yt --format 'bestvideo[height<=1080]+bestaudio/best' "https://www.youtube.com/watch?v=7E-cwdnsiow"`
+- audio-only with best quality  
+	`yt --format bestaudio "https://www.youtube.com/watch?v=7E-cwdnsiow"`
+- merge different format  
+	`yt --format bestvideo+bestaudio "https://www.youtube.com/watch?v=7E-cwdnsiow"`
+- download separate formats  
+	`yt --format 'bestvideo,bestaudio' "https://www.youtube.com/watch?v=7E-cwdnsiow" -o '%(title)s.f%(format_id)s.%(ext)s'`
+- download by extension  
+	`yt --format mp4 "https://www.youtube.com/watch?v=7E-cwdnsiow"`
+- download by file size  
+	`yt --min--formatilesize 100M <playlist_url>`
+- download by file size  
+	`yt --max--formatilesize 100M <playlist_url>`
+
+- zoom video
+    ```
+	# open zoom meeting with passcode.
+	# open network tab and filter for `mp4`
+	# something like this will be there `https://ssrweb.zoom.us/cmr/replay/.../Recording_1920x1080.mp4`
+	# Sometimes there might be 2 streams, one for camera video and other for screen sharing.
+	# copy full `Request URL` and paste in below code.
+	# copy whole `Cookie` and paste in below code.
+	
+	yt --output "FILENAME_HERE" \
+    --referer "https://zoom.us/" \
+	--add-header "cookie: PASTE_COOKIE_HERE" \
+	"PASTE_REQUEST_URL_HERE"
+	```
+
 
 # Finder
 - open finder window `option` + `command` + `space` 
