@@ -443,3 +443,12 @@ defaults write com.apple.finder SidebarShowingiCloudDesktop -bool false
 printf "%b\n" "Finder has been restarted and settings have been applied."
 killall Finder
 ```
+
+# check hash 
+```sh
+md5 /path/to/your/file
+shasum -a 256 /path/to/your/file
+shasum -a 512 /path/to/your/file
+openssl dgst -sha3-256 /path/to/your/file
+openssl dgst -sha3-512 /path/to/your/file
+```
