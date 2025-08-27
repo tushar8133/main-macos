@@ -452,3 +452,11 @@ shasum -a 512 /path/to/your/file
 openssl dgst -sha3-256 /path/to/your/file
 openssl dgst -sha3-512 /path/to/your/file
 ```
+
+# IP Address
+- Wifi `ipconfig getifaddr en0`
+- Ethernet `ipconfig getifaddr en1`
+- Local Address `hostname`
+- External Address `curl ifconfig.me`
+- Username `whoami`
+
