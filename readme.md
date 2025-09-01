@@ -460,3 +460,18 @@ openssl dgst -sha3-512 /path/to/your/file
 - External Address `curl ifconfig.me`
 - Username `whoami`
 
+
+# 7zip context menu
+- Download 7zz
+- xattr -c 7zz
+- rename to 7z
+- copy to /usr/local/bin/
+- Automator > Quick Action > Files and Folders > Run Shell Script > as arguments
+- 7z
+  ```
+  /usr/local/bin/7z a "$(dirname "$1")/7z-$(date -u "+%Y%m%d%H%M%S").7z" "$@" "-x!*.DS_Store" "-x!__MACOSX"
+  ```
+- zip
+  ```
+  /usr/local/bin/7z a --tzip "$(dirname "$1")/7z-$(date -u "+%Y%m%d%H%M%S").zip" "$@" "-x!*.DS_Store" "-x!__MACOSX"
+  ```
